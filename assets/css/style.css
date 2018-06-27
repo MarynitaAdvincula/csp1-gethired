@@ -1,0 +1,61 @@
+/*
+ *
+ * CSS Reset
+ *
+ */
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+ }
+
+/*
+ *
+ * General Rules
+ *
+ */
+ 
+body{
+ 	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+
+
+section#home{
+	background-color: red;
+	min-height: 50vh;
+	text-align: center;
+}
+
+section#services{
+	background-color: green;
+	min-height: 35vh;
+	text-align: center;
+	color: white;
+}
+
+
+section#about{
+	background-color: blue;
+	min-height: 35vh;
+	text-align: center;
+	color: white;
+}
+
+section#contact{
+	background-color: yellow;
+	min-height: 35vh;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
