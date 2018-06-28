@@ -21,10 +21,28 @@ body{
 
 
 
-section#home{
+/*section#home {
 	background-color: red;
-	min-height: 50vh;
+	min-width: 100vw;
+	min-height: 100vh;
 	text-align: center;
+}*/
+
+/*section#home > div > img {
+	min-width: 100vw;
+	min-height: 100vh;
+	margin-top: -40px;
+	margin-left: -40px;
+	margin-bottom: -40px;
+}
+*/
+
+/*img.card-img {
+	width: 100vw;
+	height: 100vh;
+	margin-top: -5px;
+	margin-left: -27px;
+	margin-right: -37px;
 }
 
 section#services{
@@ -34,6 +52,21 @@ section#services{
 	color: white;
 }
 
+section#services > div {
+	border:2px;
+	padding: 20px;
+	width: 25%;
+}
+
+section#services > div > p {
+	text-align: right;
+	margin: 0 auto;
+}	
+
+section#services > div > img {
+	width: 50%;
+	float: left;
+}
 
 section#about{
 	background-color: blue;
@@ -48,7 +81,12 @@ section#contact{
 	text-align: center;
 }
 
-
+.clear:after {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+}
+ 	*/
 
 
 
