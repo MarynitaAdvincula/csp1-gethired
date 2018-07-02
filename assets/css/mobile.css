@@ -1,0 +1,77 @@
+@media only screen 
+and (max-width: 401px){
+
+/*
+ *
+ * CSS Reset
+ *
+ */
+ * {
+ 	padding: 0;
+ 	margin: 0;
+ 	box-sizing: border-box;
+}
+
+/*Navbar*/
+
+nav.navbar {
+	width: 101%;
+}
+
+li.nav-item {
+	margin: 15px;
+}
+
+/*Center Image*/
+ div.realCenter{
+ 	top: 5%;
+ 	margin: auto;
+ 	width: 80%;
+ 	padding: 10px;
+ 	text-align: center;
+}
+
+
+div.bord0 { 
+ 	border: unset;
+ 	margin-left: -5%;
+}
+
+
+div.homePg {
+ 	/*background-image: url("../img/emp2.jpg");
+ 	background-size: cover;
+ 	background-repeat: no-repeat;*/
+ 	height: 100vh ;
+ 	width: 100vw;
+}
+
+a.nav-link {
+	padding-left: 30%;
+}
+
+
+div.noLeft {
+ 	/*padding-left: 0px;*/
+ 	/*padding-right: 0px;*/
+}
+
+a.mobOrient {
+ 	padding-left: 10%;
+}
+
+nav.mob-not-fixed {
+	position: relative;
+}
+
+.mob-non {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+img.imgfooter{
+	width: 15%;
+	margin-top: 10%;
+
+} 
+
