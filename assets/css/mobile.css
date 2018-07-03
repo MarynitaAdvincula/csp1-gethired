@@ -15,7 +15,7 @@ and (max-width: 401px){
 /*Navbar*/
 
 nav.navbar {
-	width: 101%;
+	width: 102%;
 }
 
 li.nav-item {
@@ -42,12 +42,12 @@ div.homePg {
  	/*background-image: url("../img/emp2.jpg");
  	background-size: cover;
  	background-repeat: no-repeat;*/
- 	height: 100vh ;
+ 	height: 50vh ;
  	width: 100vw;
 }
 
 a.nav-link {
-	padding-left: 30%;
+	padding-left: 15%;
 }
 
 
@@ -69,9 +69,84 @@ nav.mob-not-fixed {
 	padding-right: 0px;
 }
 
-img.imgfooter{
-	width: 15%;
-	margin-top: 10%;
+div.service{
+	width: 105%;
+	height: 80%;
+}
 
+h2.service1{
+	margin-top: -80%;
+	text-align: center;
+	margin-left: 5%; 
+
+}
+
+img.servicelogoimg {
+	height: 20%;
+	margin-top: 10%;
+	margin-left: 5%;
+}	
+
+img.serviceimg{
+	width: 70%; 
+	height: 70%;
+	margin-top: 20%;
+	margin-left: 10%;
+}
+
+div.card-deck {
+	margin-top: -70%;
+}
+
+h3.card-title {
+	text-align: center;
+}
+
+img.imgfooter{
+	width: 10%;
+	margin-top: 5%;
 } 
+
+h6.footer1{
+	margin-left: 30%;
+	letter-spacing: 1px;
+	margin-top: -14%;
+}
+
+h6.footer1 > ul >li {
+	list-style: none;
+	margin-bottom: 1%;
+}
+
+h6.footer2{
+	margin-top: 10%;
+	margin-left: 30%;
+	letter-spacing: 2px;
+
+}
+
+h6.footer2 > ul > li{
+	list-style: none;
+}
+
+h6.footer3 > ul > li{
+	list-style: none;
+}
+
+h6.footer3 {
+	margin-top: 10%;
+	margin-left: 30%; 
+	letter-spacing: 2px;
+}
+
+div.iconfooter > ul > li{
+	height: 50%;
+	display: inline-block;
+	list-style: none;
+	margin-right: 5%;
+}
+
+div.lowerfooter{
+	margin-top: 10%;
+}
 

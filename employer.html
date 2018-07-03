@@ -10,6 +10,9 @@
 	<!-- Font -->	
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif" rel="stylesheet">	
 
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 	<!-- Loads Favicon.ico -->
 	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
@@ -24,7 +27,7 @@
 
 <body>	
 
-	<nav class="navbar navbar-light bg-info fixed-top mob-not-fixed">
+	<nav class="navbar navbar-light bg-primary fixed-top mob-not-fixed">
 		<a class="navbar-brand text-light mobOrient"><img class="card-img" src="assets/img/logo/gethired-full.png"></a>
 		<ul class="nav justify-content-end">
 			<li class="nav-item">
@@ -33,6 +36,7 @@
 			<li class="nav-item">
 				<a class="nav-link text-light font-weight-bold" href="employer.html">Employer</a>
 			</li>
+			
 		</ul>
 	</nav>
 
@@ -42,10 +46,10 @@
 				<div class="card text-dark bord0">
 					<div class="homePg">	
 						<div class="col-xs-12 col-sm-12 col-md-4 realCenter">
-							<input type="text" class="form-control" id="ex1" placeholder="Search for a Position">
+							<input type="text" class="form-control" id="ex1" placeholder="Search for a location or job title or a company">
 							<div class="col-xs-8 col-sm-8 col-md-4 realCenter">
 								<div class="input-group-btn">
-									<button class="btn btn-info mb-0" type="submit">Search</button>
+									<button class="btn btn-primary mb-0" type="submit">Search</button>
 								</div>
 							</div>
 						</div>
@@ -54,34 +58,43 @@
 			</div>		
 		</div>			
 	</div>				
-	<div class="container-fluid bg-info">
+	<div class="container-fluid bg-info service">
 		<div class="row">
-			<div class="col-sm mt-5">
-				<div class="card-deck">
-					<div class="card">
-						<img class="card-img-top" src="./assets/img/emp7.jpg" class="rounded mx-auto d-block" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Own Platform</h5>
-							<p class="card-text">
-								Recruitment is a major part of human resource management, including the necessary activities an organization undertakes to attract, source, assess and employ people. The activities that comprise recruitment also overlap, to some degree, with those that comprise staffing, but the prime focus of this document is on recruitment.
-								The impact of recruitment on organizational performance was noted in a survey conducted of 4 288 executives from 102 countries by the World Federation of People Management Association (WFPMA), which showed that organizations ranked in the top 20 % in terms of ability to deliver on recruiting experienced up to 3,5 times the revenue growth and as much as twice the average profit margin of other organizations.
-								This document aims to help organizations focus and deliver on recruitment performance objectives by providing guidance on effective processes and procedures necessary for the recruitment of people.<br>
-								<br>
-								The Platform we generated complies with the rules of ISO-30405:2016, in which Provides guidance on how to attract, source, assess and recruit people. It focuses on key processes and practices, including:
-								<ul>
+			<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+				<img class="servicelogoimg" src="assets/img/logo/gethired.png" alt="logoservice">
+			</div>
+			<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+				<h2 class="service1"> How GetHired Works</h2>
+			</div>
+		</div>
+		<div class="col-sm mt-5 border-right-0">
+			<div class="card-deck">
+				<div class="card bg-info">
+					<img class="card-img-top rounded-circle serviceimg" src="./assets/img/emp20.jpg"  alt="Card image cap">
+					<div class="card-body">
+						<h3 class="card-title">Create a Profile</h3>
+							<!-- <p class="card-text text-justify mt-3">
+								Recruitment is a major part of human resource management, including the necessary activities an organization undertakes to attract, source, assess and employ people. The activities that comprise recruitment also overlap, to some degree, with those that comprise staffing.<br>
+
+								<br>The impact of recruitment on organizational performance was noted in a survey conducted of 4 288 executives from 102 countries by the World Federation of People Management Association (WFPMA), which showed that organizations ranked in the top 20 % in terms of ability to deliver on recruiting experienced up to 3,5 times the revenue growth and as much as twice the average profit margin of other organizations.<br>
+
+								<br>This aims to help organizations focus and deliver on recruitment performance objectives by providing guidance on effective processes and procedures necessary for the recruitment of people.<br>
+								
+								<br>The Platform we generated complies with the rules of ISO-30405:2016, in which Provides guidance on how to attract, source, assess and recruit people. It focuses on key processes and practices, including:
+								<ul class="text-justify mr-2">
 									<li>Recruitment Policy Development;</li>
 									<li>The flow from the sourcing of potential applicants to the boarding of new recruits;</li>
 									<li>evaluation and measurement.</li>
 								</ul>
 							</p>
-							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-						</div>
+						-->							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 					</div>
-					<div class="card">
-						<img class="card-img-top" src="./assets/img/emp8.jpg" alt="Card image cap">
-						<div class="card-body">
-							<h5 class="card-title">Flexible terms for employers</h5>
-							<p class="card-text"><p class=MsoNormal ><b><span >Value
+				</div>
+				<div class="card bg-info">
+					<img class="card-img-top rounded-circle serviceimg" src="./assets/img/emp19.jpg" alt="Card image cap">
+					<div class="card-body">
+						<h3 class="card-title">Apply and Search</h3>
+							<!-- <p class="card-text"><p class=MsoNormal ><b><span >Value
 							vs Spend</span></b></p>
 
 							<p class=MsoNormal ><span >Recruiting
@@ -154,15 +167,20 @@
 							baseline'><span >At
 							the end of the day, isn’t having talented staff worth it?&nbsp;</span></p>
 
-							<p class=MsoNormal>&nbsp;</p></p>
+							<p class=MsoNormal>&nbsp;</p></p> -->
 							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 						</div>
 					</div>
-					<div class="card">
-						<img class="card-img-top" src="./assets/img/emp9.jpg" alt="Card image cap">
+					<div class="card bg-info">
+						<img class="card-img-top rounded-circle serviceimg" src="./assets/img/emp16.jpg" alt="Card image cap">
 						<div class="card-body">
-							<h5 class="card-title">Intuitive Interface for Jobseekers</h5>
-							<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+							<h3 class="card-title">Get Hired</h3>
+							<!-- <p class="card-text">Designed for collaboration
+								Manage access for users with recruiter and super admin accounts
+								Share internal notes and assign task and interviews to colleagues
+								“No signup” access for interviewers to prepare and provide feedback on candidates
+								Receive email notifications to stay on track
+							Recruiting productivity reports to identify bottlenecks</p> -->
 							<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
 						</div>
 					</div>
@@ -171,13 +189,13 @@
 		</div>	
 	</div>
 
-	<div class="container-fluid">
+	<div class="container-fluid bg-info mainabout">
 		<div class="row">
 			<div class="col-sm bg-info">
 				<div class="about text-center mt-5">
-					<h4>About</h4>
+					<h4 class="about2">About</h4>
 					<div class="mission mt-5">
-						<h4> Our Mission </h4> 
+						<h4 class=""> Our Mission </h4> 
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -187,7 +205,7 @@
 					</div>
 
 					<div class="motto mt-5"> 
-						<h4>Our Motto</h4>	
+						<h4 class="about2">Our Motto</h4>	
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -197,29 +215,74 @@
 					</div>
 
 					<div class="story mt-5">
-						<h4>Our Story</h4>	
-						<p>I experience the hardship of being a young professional looking for a job and being a young professional looking for a candidate. I know how hard and difficult it is.</p> 
-						<p>I think that building this site will bridge the gap between the two and hope this will lessen the unemployment rate of the country.</p>
-					</div> 	
+						<h4 class="about2">Our Story</h4>	
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>	
+
+						<!-- <p>I experience the hardship of being a young professional looking for a job and being a young professional looking for a candidate. I know how hard and difficult it is.</p> 
+							<p>I think that building this site will bridge the gap between the two and hope this will lessen the unemployment rate of the country.</p> -->
+						</div> 	
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm">
-				<img class="imgfooter" src="assets/img/logo/gethired.png" alt="logofooter">
-				<h6> About GetHired
-					<ul>
-						<li>The Company</li>
-						<li>Careers</li>
-						<li>Contact Us</li>
-					</ul>
-				</h6>
+
+		<div class="container-fluid bg-primary mainfooter">
+			<div class="row">
+				<div class="col-sm">
+					<img class="imgfooter" src="assets/img/logo/gethired.png" alt="logofooter">
+					<h6 class="footer1 text-light"> About GetHired
+						<ul>
+							<li><a class="text-light" href="#">Home</a></li>
+							<li><a class="text-light" href="#">The Company</a></li>
+							<li><a class="text-light" href="#">Careers</a></li>
+							<li><a class="text-light" href="#">Contact Us</a></li>
+						</ul>
+						<div class="iconfooter">
+							<ul>
+								<li><i class="far fa-envelope-open"></i></li>
+								<li><i class="fab fa-facebook-f"></i></li>
+								<li><i class="fab fa-twitter"></i></li>
+								<li><i class="fab fa-linkedin-in"></i></li>
+							</ul>
+						</div>
+					</h6>
+				</div>
+				<div class="col-sm">
+					<h6 class="footer2 text-light"> JOBSEEKERS
+						<ul>
+							<li><a class="text-light" href="#">Job Board</a></li>
+							<li><a class="text-light" href="#">Career Advice</a></li>
+							<li><a class="text-light" href="#">Job seekers guide</a></li>
+						</ul>
+					</h6>
+				</div>
+				<div class="col-sm">
+					<h6 class="footer3 text-light"> EMPLOYERS
+						<ul>
+							<li><a class="text-light" href="#">Post a Job Ad</a></li>
+							<li><a class="text-light" href="#">Search for Resumes</a></li>
+							<li><a class="text-light" href="#">Pricing</a></li>
+						</ul>
+					</h6>
+				</div>
 			</div>
 		</div>
-	</div>
+		<footer class="container-fluid bg-primary text-light">
+			<div class="row">
+				<div class="col-sm-12 text-center">	
+					<p>Copyright&copy; 2018 by GetHired</p>
+				</div>
+			</div>		
+		</footer>
+
+
+
 
 
 
