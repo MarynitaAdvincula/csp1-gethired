@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>GetHired</title>
+
+	<!-- Font -->	
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif" rel="stylesheet">	
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- Loads Favicon.ico -->
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+	<!-- Import Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+	<!-- Import custom stylesheet -->
+	<link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+
+	<!-- <nav class="navbar navbar-light bg-primary fixed-top mob-not-fixed">
+		<a class="navbar-brand text-light mobOrient"><img class="card-img" src="assets/img/logo/gethired-full.png"></a>
+		<ul class="nav justify-content-end">
+			<li class="nav-item">
+				<a class="nav-link text-light font-weight-bold" href="index.html">Jobseeker</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light font-weight-bold" href="employer.html">Employer</a>
+			</li>
+			
+		</ul>
+	</nav> -->
+
+	<div class="container-fluid">
+		<div>
+			<h3>Personal Information</h3>
+			<form>
+				<div class="form-row">
+					<div class="form-group col-md-4 mt-5">
+						<label for="FName">First Name</label>
+						<input type="text" class="form-control" id="FirstName" placeholder="First Name">
+					</div>
+					<div class="form-group col-md-4 mt-5">
+						<label for="MName">Middle Name</label>
+						<input type="text" class="form-control" id="MiddleName" placeholder="Middle Name">
+					</div>
+					<div class="form-group col-md-4 mt-5">
+						<label for="LName">Last Name</label>
+						<input type="text" class="form-control" id="LastName" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputAddress">Present Address</label>
+					<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<label for="inputCity">City</label>
+							<input type="text" class="form-control" id="inputCity">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="inputState">State</label>
+							<select id="inputState" class="form-control">
+								<option selected>Choose...</option>
+								<option>...</option>
+							</select>
+						</div>
+						<div class="form-group col-md-2">
+							<label for="inputZip">Zip</label>
+							<input type="text" class="form-control" id="inputZip">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inputAddress2">Permanent Address</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="inputCity">City</label>
+						<input type="text" class="form-control" id="inputCity">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputState">State</label>
+						<select id="inputState" class="form-control">
+							<option selected>Choose...</option>
+							<option>...</option>
+						</select>
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputZip">Zip</label>
+						<input type="text" class="form-control" id="inputZip">
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<label for="inputdob">Date of Birth</label>
+						<input type="text" class="form-control" id="inputdob" placeholder="mm/dd/yyyy">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputstatus">Marital Status</label>
+						<input type="text" class="form-control" id="inputstatus" placeholder="Civil Status">
+					</div>
+					<div class="form-group col-md-2">
+						<label for="inputbirthplace">Place of Birth</label>
+						<input type="text" class="form-control" id="inputbirthplace" placeholder="Birthplace">
+					</div>
+				</div>	
+				<div class="form-row">
+					<div class="form-group col-md-4">
+						<label for="MobileNumber">Mobile Number</label>
+						<input type="text" class="form-control" id="MobileNumber" placeholder="+63-000-000-0000">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="ResNumber">Phone Number</label>
+						<input type="text" class="form-control" id="ResNumber" placeholder="+63-000-0000">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="inputEmail4">Email Address</label>
+						<input type="Email" class="form-control" id="inputEmail4" placeholder="Email">
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div>
+						<h3>Educational Background</h3>
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-4 mt-5">
+									<label for="placetertiary">Tertiary</label>
+									<input type="text" class="form-control" id="placetertiary" placeholder="School Name">
+								</div>
+								<div class="form-group col-md-4 mt-5">
+									<label for="placeyears">Years Attended</label>
+									<input type="text" class="form-control" id="placeyears" placeholder="From-To">
+								</div>
+								<div class="form-group col-md-4 mt-5">
+									<label for="placelocation">Location</label>
+									<input type="text" class="form-control" id="placelocation" placeholder="School Address">
+								</div>
+							</div>
+							<div class="form-group col-md-4">
+									<label for="placelocation">Location</label>
+									<input type="text" class="form-control" id="placelocation" placeholder="School Address">
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck">
+									<label class="form-check-label" for="gridCheck">
+										Check me out
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-primary">Sign in</button>
+						</form>		
+					</div>	
+				</div>
+				<!-- Import Bootstrap scirpts -->
+				<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
+
+				<!-- Import custom script -->
+				<script src="./assets/js/script.js"></script>
+
+			</body>
+			</html>
+
