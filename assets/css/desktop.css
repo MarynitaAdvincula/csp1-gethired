@@ -153,6 +153,18 @@ div.iconfooter > ul > li{
 	margin-right: 5%;
 }
 
+
+/*Jobseeke*/
+div.main{
+	margin-top: 95px;
+	
+}
+
+div.mained{
+	margin-top: 10px;
+}
+
+
 .clear:after {
  	content: "";
  	display: block;
