@@ -44,6 +44,7 @@
  p.card-text{
  	text-align: justify;
  }
+ 
  div.homePg{
  	background-image: url("../img/emp2.jpg");
  	background-size: cover;
@@ -74,7 +75,7 @@ div.service{
 
 img.servicelogoimg{
 	width: 10%;
-	margin-left: 120%;
+	margin-left: 115%;
 	margin-top: 5%;
 }	
 
@@ -171,6 +172,16 @@ div.mained{
  	clear: both;
 }
 
+div.minifooter{
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 3%;
+}
+
+div.minifooter > ul > li{
+	list-style: none;
+	display: inline-block;
+}
 
 
 
