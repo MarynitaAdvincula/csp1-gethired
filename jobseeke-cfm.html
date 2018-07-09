@@ -32,11 +32,10 @@
 		<a class="navbar-brand text-light mobOrient"><img class="card-img" src="assets/img/logo/gethired-full.png"></a>
 		<ul class="nav justify-content-end">
 			<li class="nav-item">
-				<a class="nav-link text-light font-weight-bold" href="#">My Profile</a>
-				<!-- <a class="nav-link text-light font-weight-bold" href="#" data-toggle="modal" data-target="#myModal">Jobseeker</a> -->
+				<a class="nav-link text-light font-weight-bold" href="index.html">Jobseeker</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link text-light font-weight-bold" href="#">Search</a>
+				<a class="nav-link text-light font-weight-bold" href="employer.html">Employer</a>
 			</li>		
 		</ul>
 	</nav>
@@ -215,20 +214,6 @@
 					</div>
 				</div>
 			</form>
-			<div class="minifooter">
-				<ul>
-					<li>
-						<a href="#"><i class="far fa-edit"></i>
-						</a></li>
-						<li><a href="#"><i class="far fa-save"></i>
-						</a></li>
-						<li><a href="#"><i class="fas fa-plus"></i>
-						</a></li>
-						<li><a href="#"><i class="fas fa-trash"></i>
-						</a></li>
-					</ul>
-				</div>	
-			</div>	
 		</div>	
 			</div>
 		</div>	
@@ -307,14 +292,6 @@
 						<input type="text" class="form-control" id="locName" placeholder="License Number">
 					</div>
 				</div>
-				<div class="minifooter">
-					<ul>
-						<li><a href="#"><i class="far fa-edit"></i></a></li>
-						<li><a href="#"><i class="far fa-save"></i></a></li>
-						<li><a href="#"><i class="fas fa-plus"></i></a></li>
-						<li><a href="#"><i class="fas fa-trash"></i></a></li>
-					</ul>
-				</div>	
 			</div> 
 		</div>
 		<!-- </div> -->	
@@ -415,14 +392,6 @@
 							<textarea class="form-control" rows="5" id="comment"></textarea>
 						</div>
 					</div>
-					<div class="minifooter">
-						<ul>
-							<li><a href="#"><i class="far fa-edit"></i></a></li>
-							<li><a href="#"><i class="far fa-save"></i></a></li>
-							<li><a href="#"><i class="fas fa-plus"></i></a></li>
-							<li><a href="#"><i class="fas fa-trash"></i></a></li>
-						</ul>
-					</div>	
 				</div>	
 			</div>				
 		</div>						
@@ -447,14 +416,6 @@
 							<textarea class="form-control" rows="2" id="Skills"></textarea>
 						</div>
 					</div>			
-					<div class="minifooter">
-						<ul>
-							<li><a href="#"><i class="far fa-edit"></i></a></li>
-							<li><a href="#"><i class="far fa-save"></i></a></li>
-							<li><a href="#"><i class="fas fa-plus"></i></a></li>
-							<li><a href="#"><i class="fas fa-trash"></i></a></li>
-						</ul>
-					</div>	
 				</div>
 			</div>			
 		</div>	
@@ -479,20 +440,11 @@
 							<textarea class="form-control" rows="3" id="Language Used"></textarea>
 						</div>
 					</div>			
-					<div class="minifooter">
-						<ul>
-							<li><a href="#"><i class="far fa-edit"></i></a></li>
-							<li><a href="#"><i class="far fa-save"></i></a></li>
-							<li><a href="#"><i class="fas fa-plus"></i></a></li>
-							<li><a href="#"><i class="fas fa-trash"></i></a></li>
-						</ul>
-					</div>	
 				</div>			
 			</div>	
 		</div>	
-	</div>	
 
-	<div class="container-fluid">
+<div class="container-fluid">
 		<div>
 			<div class="card main">
 				<div class="card-header"><h3>References</h3></div>
@@ -591,35 +543,24 @@
 				</div>
 			</div>	
 		</div>
-
-		<div class="col-md-12">
-			<div class="form-check-inline statement">
-				<label class="form-check-label " for="gridCheck">
-					I certify that my answers are true and complete to the best of my knowledge. If this application leads to employment, 
-					I understand that false or misleading information in my application may result in my release.<span class="ma-reqd">*</span>
-				</label>
+			<div class="col-md-12">
+				<div class="form-check-inline text-center">
+					<label class="form-check-label" for="gridCheck">
+						Review the values above, if you agree of the data entered please hit the submit button, otherwise click the back button<span class="ma-reqd">*</span>
+					</label>
+				</div>
 			</div>
+			
+			<hr>
+
+			<div class="form-group">
+				<div class="text-right">
+					<button type="button" onClick="location.href='jobseeke.html'"class="btn btn-primary mb-5" data-toggle="button">Back</button>
+					<button type="button" class="btn btn-primary mb-5" data-toggle="button">Submit</button>
+				</div>
+			</div>	
 		</div>
-		
-		<hr>
-
-		<div class="form-group btu">
-			<div class="text-right">
-				<button type="button" onClick="location.href='jobseeke-cfm.html'" class="btn btn-primary mb-5" data-toggle="button">I Agree</button>
-			</div>
-		</div>	
-	</div>
-	
-
-	<!-- Final Footer -->
-
-	<div class="container-fluid bg-primary text-light lowerfooter">
-		<div class="row">
-			<div class="col-sm-12 text-center">	
-				<p>Copyright&copy; 2018 by GetHired</p>
-			</div>
-		</div>		
-	</div>
+	</div>		
 
 
 	<!-- Import Bootstrap scirpts -->
