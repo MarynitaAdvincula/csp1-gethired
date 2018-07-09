@@ -4,3 +4,194 @@
 @import "tablet.css";
 /* Mobile CSS */
 @import "mobile.css";
+
+
+label.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+    background-color: #007bff!important
+}
+
+.comp-img1{
+    background-image: url("../img/company/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img2{
+    background-image: url("../img/company/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img3{
+    background-image: url("../img/company/3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img4{
+    background-image: url("../img/company/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img5{
+    background-image: url("../img/company/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img6{
+    background-image: url("../img/company/6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img7{
+    background-image: url("../img/company/7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img8{
+    background-image: url("../img/company/8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img9{
+    background-image: url("../img/company/9.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.comp-img10{
+    background-image: url("../img/company/10.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+ }
+
+/*.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+}*/
+
+/*.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+h1.text {
+  color: white;
+  font-size: 50px;
+  font-family: 'Cookie', cursive; 
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p.text1 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 39%;
+  left: 50%;
+  margin-top: 15px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p.text2 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 42%;
+  left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p.text2 > a {
+  color: white;
+}
+
+p.text3 {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+p.text3 > a {
+  color: white;
+}
+
+
+h2.text {
+  color: white;
+  font-size: 30px;
+  font-family: 'Cookie', cursive; 
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: right;
+}
+
+
+*/
+
+div.HeadSpace {
+	margin-top: 15%;
+}
+
+
+
+
+
+

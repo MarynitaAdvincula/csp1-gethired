@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>GetHired</title>
+
+	<!-- Font -->	
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Narrow" rel="stylesheet">	
+
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+	<!-- Loads Favicon.ico -->
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+	<!-- Import Bootstrap Stylesheet -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	
+	<!-- Import custom stylesheet -->
+	<link rel="stylesheet" type= "text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>	
+
+	<!-- NavBar -->
+	
+	<div class="container-fluid mainnav">
+		<div class="row">
+			<nav class="navbar navbar-light bg-primary fixed-top mob-not-fixed">
+				<a class="navbar-brand text-light mobOrient" href="#"><img class="card-img" src="assets/img/logo/gethired-full.png"></a>
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						<!-- <a class="nav-link text-light font-weight-bold" href="jobseeke.html">Jobseeker</a> -->
+						<a class="nav-link text-light font-weight-bold" href="#" data-toggle="modal" data-target="#myModal">Jobseeker</a> 		
+					</li>
+					<li class="nav-item">
+						<!-- <a class="nav-link text-light font-weight-bold" href="employer.html">Employer</a> -->
+						<a class="nav-link text-light font-weight-bold" href="#" data-toggle="modal" data-target="#myModal2">Employer</a> 
+					</li>	
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="HeadSpace"></div>
+
+	<div class="row">
+		<div class="col-md-3 remspacesrch">
+			
+			<div class="card">
+				<div class="card-header">
+					<strong>Search Criteria</strong>
+				</div>
+				<div class="card-body">
+					
+					<div id="qsCon">
+						<form id="search_criteria_form" name="search" method="get" action="#">
+							
+							<div class="form-group" id="qsphKey">
+								<input class="qsphIptKey form-control no-email ac_input" id="key" name="key" placeholder="Job Title or Keywords ..." type="text" title="Enter job title, company name, skill, etc" maxlength="100" autocomplete="off" autosuggest="on">
+							</div>
+							<div class="form-group" >
+								<select class="form-control" >
+									<option value="">All Locations</option>
+									<optgroup label="Philippines">
+										<option value="60100" >Armm</option>
+										<option value="60200" >Bicol Region</option>
+										<option value="60300" >C.A.R</option>
+										<option value="60400" >Cagayan Valley</option>
+										<option value="61400" >Calabarzon &amp; Mimaropa</option>
+										<option value="60700" >Caraga</option>
+										<option value="60500" >Central Luzon</option>
+										<option value="60800" >Central Visayas</option>
+										<option value="61300" >Davao</option>
+										<option value="60900" >Eastern Visayas</option>
+										<option value="61000" >Ilocos Region</option>
+										<option value="61100" >National Capital Reg</option>
+										<option value="61200" >Northern Mindanao</option>
+										<option value="60600" >Soccskargen</option>
+										<option value="61600" >Western Visayas</option>
+										<option value="61500" >Zamboanga</option>
+									</optgroup>
+									<optgroup label="Overseas">
+										<option value="100000" >China</option>
+										<option value="20000" >Hong Kong</option>
+										<option value="40000" >India</option>
+										<option value="30000" >Indonesia</option>
+										<option value="150000" >Japan</option>
+										<option value="50000" >Malaysia</option>
+										<option value="70000" >Singapore</option>
+										<option value="80000" >Thailand</option>
+										<option value="110000" >Vietnam</option>
+									</optgroup>
+									<optgroup label="Other Work Locations">
+										<option value="90100" >All Other Work Locations</option>
+										<option value="90110" >Africa</option>
+										<option value="90120" >Asia - Middle East</option>
+										<option value="90130" >Asia - Others</option>
+										<option value="90140" >Australia &amp; New Zealand</option>
+										<option value="90150" >Europe</option>
+										<option value="90160" >North America</option>
+										<option value="90170" >South America</option>
+									</optgroup>
+								</select>
+							</div>		
+							<div class="form-group" id="qsSpe"><select class="form-control">
+								<option value="">All Specializations</option>
+								<optgroup class="optgroup" label="Accounting/Finance">
+									<option value="130,131,132,135" >All Accounting/Finance</option>
+									<option value="130" >Audit &amp; Taxation</option>
+									<option value="135" >Banking/Financial</option>
+									<option value="132" >Corporate Finance/Investment</option>
+									<option value="131" >General/Cost Accounting</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Admin/Human Resources">
+									<option value="133,137,146,148" >All Admin/Human Resources</option>
+									<option value="133" >Clerical/Administrative</option>
+									<option value="137" >Human Resources</option>
+									<option value="146" >Secretarial</option>
+									<option value="148" >Top Management</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Arts/Media/Communications">
+									<option value="100,101,106,141" >All Arts/Media/Communications</option>
+									<option value="100" >Advertising</option>
+									<option value="101" >Arts/Creative Design</option>
+									<option value="106" >Entertainment</option>
+									<option value="141" >Public Relations</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Building/Construction">
+									<option value="150,180,184,198" >All Building/Construction</option>
+									<option value="180" >Architect/Interior Design</option>
+									<option value="184" >Civil Engineering/Construction</option>
+									<option value="150" >Property/Real Estate</option>
+									<option value="198" >Quantity Surveying</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Computer/Information Technology">
+									<option value="191,192,193" >All Computer/Information Technology</option>
+									<option value="192" >IT - Hardware</option>
+									<option value="193" >IT - Network/Sys/DB Admin</option>
+									<option value="191" >IT - Software</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Education/Training">
+									<option value="105,121" >All Education/Training</option>
+									<option value="105" >Education</option>
+									<option value="121" >Training &amp; Dev.</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Engineering">
+									<option value="185,186,187,188,189,190,195,200"	>All Engineering</option>
+									<option value="185" >Chemical Engineering</option>
+									<option value="187" >Electrical Engineering</option>
+									<option value="186" >Electronics Engineering</option>
+									<option value="189" >Environmental Engineering</option>
+									<option value="200" >Industrial Engineering</option>
+									<option value="195" >Mechanical/Automotive Engineering</option>
+									<option value="190" >Oil/Gas Engineering</option>
+									<option value="188" >Other Engineering</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Healthcare">
+									<option value="111,112,113" >All Healthcare</option>
+									<option value="113" >Doctor/Diagnosis</option>
+									<option value="112" >Pharmacy</option>
+									<option value="111" >Nurse/Medical Support</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Hotel/Restaurant">
+									<option value="107,114" >All Hotel/Restaurant</option>
+									<option value="107" >Food/Beverage/Restaurant</option>
+									<option value="114" >Hotel/Tourism</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Manufacturing">
+									<option value="115,140,194,196,197" >All Manufacturing</option>
+									<option value="115" >Maintenance</option>
+									<option value="194" >Manufacturing</option>
+									<option value="196" >Process Design &amp; Control</option>
+									<option value="140" >Purchasing/Material Mgmt</option>
+									<option value="197" >Quality Assurance</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Sales/Marketing">
+									<option value="139,142,143,144,145,149,151,201,202,203" >All Sales/Marketing</option>
+									<option value="203" >Digital Marketing</option>
+									<option value="202" >E-commerce</option>
+									<option value="142" >Sales - Corporate</option>
+									<option value="139" >Marketing/Business Dev</option>
+									<option value="149" >Merchandising</option>
+									<option value="145" >Retail Sales</option>
+									<option value="143" >Sales - Eng/Tech/IT</option>
+									<option value="144" >Sales - Financial Services</option>
+									<option value="151" >Telesales/Telemarketing</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Sciences">
+									<option value="102,103,108,109,181,182,183,199" >All Sciences</option>
+									<option value="103" >Actuarial/Statistics</option>
+									<option value="102" >Agriculture</option>
+									<option value="181" >Aviation</option>
+									<option value="182" >Biotechnology</option>
+									<option value="183" >Chemistry</option>
+									<option value="108" >Food Tech/Nutritionist</option>
+									<option value="109" >Geology/Geophysics</option>
+									<option value="199" >Science &amp; Technology</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Services">
+									<option value="118,119,120,134,138,147,152" >All Services</option>
+									<option value="119" >Security/Armed Forces</option>
+									<option value="134" >Customer Service</option>
+									<option value="147" >Logistics/Supply Chain</option>
+									<option value="138" >Law/Legal Services</option>
+									<option value="118" >Personal Care</option>
+									<option value="120" >Social Services</option>
+									<option value="152" >Tech &amp; Helpdesk Support</option>
+								</optgroup>
+								<optgroup class="optgroup" label="Others">
+									<option value="90,104,110,116,117" >All Others</option>
+									<option value="110" >General Work</option>
+									<option value="104" >Journalist/Editors</option>
+									<option value="117" >Publishing</option>
+									<option value="116" >Others</option>
+								</optgroup>
+							</select>
+						</div>
+
+						<div class="form-group" id="qsSal">
+							<input class="qsIptSal form-control" id="salary" name="salary" autocomplete="off" type="text" value="" placeholder="Minimum Salary (PHP)">
+						</div>		
+						<input id="hidden_omni_search_method" name="ojs" type="hidden" value="3">
+						<div class="form-group search-criteria-button" id="qsBtn">
+							<button class="btn btn-primary btn-block" id="btnSubmit" type="submit" value="Search" onclick="_gaq.push(['_trackEvent', 'JSPH Personalized Homepage', 'Search button on Search Jobs Page clicked', 'New Header']);" title="Search Jobs Now"><strong>Search</strong></button>
+						</div>
+					</form>
+				</div>
+				<br>
+
+			</div>
+		</div>
+
+	</div>
+	<div class="col-md-8 col-sm-12 col-xs-12">
+		<table class="table table-condensed" >
+			<tbody>
+				<tr>
+					<td class="tblRow"><div class="comp-img1 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Web Developer</span></a></h4>
+						<div class="col-sm-9">
+							<a>Stark Technologies Inc.</a>
+						   <div>
+						   	Tauranga, New Zealand
+						   </div>
+						</div>
+					</td>
+					<td>john@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img2 comp"></div></td>
+					<td>
+					   <h4 class="job-card-title"><a>Project Manager</span></a></h4>
+						<div class="col-sm-9">
+							<a>Titan Inc.</a>
+						   <div>
+						   	Quezon City, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>mary@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img3 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Finance Officer</span></a></h4>
+						<div class="col-sm-9">
+							<a>Museum Corporation</a>
+						   <div>
+						   	Makati City, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>july@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img4 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>HR/Admin Assistant</span></a></h4>
+						<div class="col-sm-9">
+							<a>Polar Experts Inc.</a>
+						   <div>
+						   	Taguig, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>john@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img5 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Country Manager</span></a></h4>
+						<div class="col-sm-9">
+							<a>Honeycomb Corporation</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>mary@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img6 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>IT Head</span></a></h4>
+						<div class="col-sm-9">
+							<a>Silver Systems Technologies Inc.</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div> 	
+					</td>
+					<td>july@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img7 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>HR Director</span></a></h4>
+						<div class="col-sm-9">
+							<a>Platinum Technologies Inc.</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>john@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img8 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Marketing Manager</span></a></h4>
+						<div class="col-sm-9">
+							<a>Master Poster Inc.</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>mary@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+						
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img9 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Clerk</span></a></h4>
+						<div class="col-sm-9">
+							<a>IBOxcks Systems Inc.</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>july@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+				<tr>
+					<td class="tblRow"><div class="comp-img10 comp"></div></td>
+					<td>
+						<h4 class="job-card-title"><a>Nurse</span></a></h4>
+						<div class="col-sm-9">
+							<a>Titanium Systems Technologies Inc.</a>
+						   <div>
+						   	Mandaluyong, Philippines
+						   </div>
+						</div>
+					</td>
+					<td>john@example.com
+						<br>
+							<button class="btn-primary">Click Here to Apply</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div>
+</div>
+
+
+<!-- First Footer -->
+
+<div class="container-fluid bg-primary mainfooter">
+	<div class="row">
+		<div class="col-sm">
+			<img class="imgfooter" src="assets/img/logo/gethired.png" alt="logofooter">
+			<h6 class="footer1 text-light"> About GetHired
+				<ul>
+					<li><a class="text-light" href="home.html">Home</a></li>
+					<li><a class="text-light" href="about.html">The Company</a></li>
+					<li><a class="text-light" href="jobsearch.html">Careers</a></li>
+					<li><a class="text-light" href="devprofile.html">Developer's Profile</a></li>
+				</ul>
+				<div class="iconfooter">
+					<ul>
+						<li><a class="text-light" href="#"><i class="far fa-envelope-open"></i></li></a>
+						<li><a class="text-light" href="#"><i class="fab fa-facebook-f"></i></li></a>
+						<li><a class="text-light" href="#"><i class="fab fa-twitter"></i></li></a>
+						<li><a class="text-light" href="#"><i class="fab fa-linkedin-in"></i></li></a>
+					</ul>
+				</div>
+			</h6>
+		</div>
+		<div class="col-sm">
+			<h6 class="footer2 text-light"> JOBSEEKERS
+				<ul>
+					<li><a class="text-light" href="#">Job Board</a></li>
+					<li><a class="text-light" href="#">Career Advice</a></li>
+					<li><a class="text-light" href="#">Job seekers guide</a></li>
+				</ul>
+			</h6>
+		</div>
+		<div class="col-sm">
+			<h6 class="footer3 text-light"> EMPLOYERS
+				<ul>
+					<li><a class="text-light" href="#">Post a Job Ad</a></li>
+					<li><a class="text-light" href="#">Search for Resumes</a></li>
+					<li><a class="text-light" href="#">Pricing</a></li>
+				</ul>
+			</h6>
+		</div>
+	</div>
+</div>
+
+<!-- Final Footer -->
+
+<div class="container-fluid bg-primary text-light lowerfooter">
+	<div class="row">
+		<div class="col-sm-12 text-center">	
+			<p>Copyright&copy; 2018 by GetHired</p>
+		</div>
+	</div>		
+</div>
+
+<!-- Import Bootstrap scirpts -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>	
+
+<!-- Import custom script -->
+<script src="./assets/js/script.js"></script>
+
+</body>
+</html>
