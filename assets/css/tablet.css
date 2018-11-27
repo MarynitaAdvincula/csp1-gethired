@@ -1,439 +1,565 @@
-@media only screen 
-and (max-width: 961px)
-and (min-width: 401px) {
 /*
  *
- * CSS Reset
+ * Tablet Devices
  *
  */
- * {
- 	padding: 0;
- 	margin: 0;
- 	box-sizing: border-box;
- }
 
-/*
- *
- * General Rules
- *
- */
- 
- body {
- 	font-family: 'PT Sans Narrow', sans-serif;
- }
+ @media only screen and (max-width: 960px) and (min-width:401px){
 
- /*Navbar*/
+ 	/*============================================
+ 	       INDEX/HOME/
+ 	=============================================*/
+ /* ================================
+   		      HEADER
+   ================================= */
 
-
- img.card-img {
- 	height: 47px;
- 	width: 149px;
- }
-
- .card-img-overlay{
- 	margin-top: 25%;
- }
-
- .input-group {
- 	min-width: 100%;
- 	min-height: 100%;
- 	padding-right: 70%;
- 	text-align: center;
- }
-
- h5.card-title{
- 	text-align: center;
- }
-
- p.card-text{
- 	text-align: justify;
- }
- div.homePg{
- 	background-image: url("../img/emp15.jpg");
- 	background-size: cover;
- 	background-position: center;
- 	background-repeat: no-repeat;
- 	height: 115vh ;
- 	width: 100vw;
-
- }
-
- div.noLeft{
- 	padding-left: 0px;
- 	/*padding-right: 0px;*/
- }
- div.realCenter{
- 	top: 30%;
- 	margin: auto;
- 	width: 50%;
- 	padding: 10px;
- 	text-align: center;
- }
-
-
- li.nav-itemer {
-    margin-left: 25px;
+  .nav-menu {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto; 
   }
 
-  a.nav-linker {
-    margin-left: 25px;
+  .nav-menu-2 {
+    position: inherit; 
   }
 
- img.imgfooter {
- 	height:  50px;
- 	width:  50px;
- 	margin-top: 15px;
- 	margin-left: 30%; 
- } 
+  .navbar {
+    padding: .5rem 0; 
+  }
 
- img.servicelogoimg {
- 	height: 30%;
- 	margin-top: 10%;
- 	margin-left: 80%;
- }	
+  .navbar-brand {
+    font-size: 31px; 
+  }
 
- h2.service1 {
- 	margin-top: 22%;
- 	text-align: center;
- 	margin-right:  -20%; 
- }
+  .navbar-light .navbar-brand {
+    color: #fff; 
+  }
 
- div.card-deck {
- 	margin-top: -20%;
- }
-
- h6.footer1{
- 	margin-left: 30%;
- 	letter-spacing: 1px;
- 	margin-top: 10%;
- }
-
- h6.footer1 > ul >li {
- 	list-style: none;
- 	margin-bottom: 1%;
- }
-
- h6.footer2{
- 	margin-top: 30%;
- 	margin-left: 30%;
- 	letter-spacing: 2px;
-
- }
-
- h6.footer2 > ul > li{
- 	list-style: none;
- }
-
- h6.footer3 > ul > li{
- 	list-style: none;
- }
-
- h6.footer3 {
- 	margin-top: 30%;
- 	margin-left: 30%; 
- 	margin-bottom: 20%;
- 	letter-spacing: 2px;
- }
-
- div.iconfooter > ul > li{
- 	height: 50%;
- 	display: inline-block;
- 	list-style: none;
- 	margin-right: 5%;
- }
+    
+  .navbar-light .navbar-brand:hover {
+      color: #fff; 
+  }
 
 
+  .navbar-light .navbar-nav .show > .nav-link {
+    color: #fff; 
+  }	
 
- /*Jobseeke Registration html*/
+  .navbar-light .navbar-nav .active > .nav-link {
+    color: #fff; 
+  }
 
- div.form{
- 	margin-top: 95px;
- }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff; 
+  }
+
+  .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+     color: #fff;
+     outline: none; 
+  }
 
 
- div.main{
- 	margin-top: 80px;
+  .navbar-light .navbar-toggler {
+    color: #fff;
+    border-color: #fff; 
+  }
+
+  .top-destination{
+  	text-align: center;
+  	/*line-height: 50px;*/
+  	margin-left: 15%;
+  	height: 20%;
+  	width:  100%;
+
+  }
+
+  .cardyellow{
+  	margin-bottom: 10px;
+  	margin-right: 50px;
+
+  }
+
+ 	/*==============================================================
+ 	   EMPLOYER/EMPLOYER REGISTRATION/JOBSEARCH/JOBSEEKER/JOBSEEKER2
+ 	=================================================================*/
  	
- }
+ 	header#mainHeader{
+ 		background-color: #6c757d;
+ 		width: 20vw;
+ 		height: 100vh;
+ 		position: fixed;
+ 		padding: 25px;
+ 		/*margin-top: 50px;*/
+ 	}
 
- div.edmain{
- 	margin-top: 10px;
- }
+ 	header#mainHeader > img {
+ 		width: 100%;
+ 		margin-bottom: 25px;
+ 		border:5px solid black;
+ 	}
 
- /*Jobseeke Upload Photo*/
+ 	header#mainHeader > nav >ul{
+ 		list-style-type: none;
+ 		text-align: center;
+ 	}
 
- .ma-reqd {
- 	color: red;
- }
+ 	header#mainHeader > nav > ul > li {
+ 		height: 50px;
+ 		margin-bottom: 5px;
+ 	}
 
- div.minifooter{
- 	text-align: center;
- 	letter-spacing: 5px;
- 	margin-top: 3%;
- }
+ 	header#mainHeader > nav > ul > li > a {
+ 		text-decoration: none;
+ 		background-color: #e6ebef;
+ 		line-height: 50px;
+ 		display: block;
+ 		color: black;
+ 	}	
 
- div.minifooter > ul > li{
- 	list-style: none;
- 	display: inline-block;
- }
-
-
- /*Employer*/
-
- div#carouselExampleIndicators{
- 	width: 105%;
- 	height: 100%;
- }
-
-div.service{
-  width: 105%;
-  height: 80%;
- }
-
- div.mainfooter{
-  width: 105%;
- }
-
-footer.lowerfooter{
-  width: 105%;
- }
-
-div.lowerfooter{
-  width: 105%
-}
-
-h3.card-title{
-	text-align: center; 	
-}
-
-/*About*/
-
-.container{
-  width: 100%;
-}
-
-h2.about {
-  text-align: center;
-}
-
-p.content1{
-  text-align: justify;
-}
-
-div.card-header{
-  text-align: center;
-}
-
- .HeadSpace{
-  margin-top:67px;
- }
-
- /*Side bar css*/
- .wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
- }
+ 	header#mainHeader > nav > ul > li > a:hover {
+ 		background-color: blue;
+ 		color:white;
+ 	}
 
 
- .sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 125px;
-  width: 125px;
-  height: 100%;
-  margin-left: -125px;
-  overflow-y: auto;
-  background: #CCCCCC;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
- }
+ 	/*==============================================================
+ 	                      JOBSEARCH
+ 	=================================================================*/
+
+	header#mainHeader2{
+ 		background-color: #6c757d;
+ 		width: 20vw;
+ 		height: 100vh;
+ 		position: fixed;
+ 		padding: 25px;
+ 		/*margin-top: 50px;*/
+ 	}
+
+ 	header#mainHeader2 > img {
+ 		width: 80%;
+ 		margin-bottom: 25px;
+ 		border:20px solid black;
+ 	}
+
+ 	header#mainHeader2 > nav >ul{
+ 		list-style-type: none;
+ 		text-align: center;
+ 	}
+
+ 	header#mainHeader2 > nav > ul > li {
+ 		height: 50px;
+ 		margin-bottom: 5px;
+ 	}
+
+ 	header#mainHeader2> nav > ul > li > a {
+ 		text-decoration: none;
+ 		background-color: #e6ebef;
+ 		line-height: 50px;
+ 		display: block;
+ 		color: black;
+ 	}	
+
+ 	header#mainHeader2 > nav > ul > li > a:hover {
+ 		background-color: blue;
+ 		color:white;
+ 	}
+
+ 	.headerimg{
+ 		line-height: 50px;
+ 		display: block;
+
+ 	}
+
+ 	main#wrapper{
+ 		background-color: gray;
+ 		margin-left: 20vw;
+ 		color:white;
+ 		text-align: center;
+ 	}
+
+ 	/*====================
+ 	         SEARCH
+ 	======================*/
+
+ 	section#search{
+ 		background-color: white;
+ 		min-height: 75vh;
+ 		color: black;
+ 		padding: 15px 15px 15px;
+ 		margin-top: 50px;
+ 	}	
+
+ 	section#search > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#search > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#search > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#search > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#search > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*===========================
+ 	           SERVICES
+ 	==============================*/
+
+ 	section#services{
+ 		background-color: white;
+ 		min-height: 75vh;
+ 		color: black;
+ 		padding: 0 15px 15px;
+ 		/*margin-top: 50px;*/
+ 	}	
+
+ 	section#services > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#services > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#services > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#services > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#services > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*===========================
+ 	    PERSONAL INFORMATION
+ 	==============================*/
+ 	section#personal{
+ 		background-color: white;
+ 		min-height: 75vh;
+ 		color: black;
+ 		padding: 15px 15px 15px;
+ 		margin-top: 50px;
+ 	}	
+
+ 	section#personal > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#personal > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#personal > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#personal > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#personal > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*===========================
+ 	    EDUCATIONAL BACKGROUND
+ 	==============================*/
+ 	section#educational{
+ 		background-color: white;
+ 		min-height: 55vh;
+ 		color: black;
+ 		padding: 15px 15px 15px;
+ 		/*margin-top: 50px;*/
+ 	}	
+
+ 	section#educational > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#educational > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#educational > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#educational > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#educational > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+	/*====================
+ 	    WORK EXPERIENCES
+ 	======================*/
+ 	section#work{
+ 		background-color: white;
+ 		min-height: 55vh;
+ 		color: black;
+ 		padding: 15px 15px 15px;
+ 		/*margin-top: 50px;*/
+ 	}	
+
+ 	section#work > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#work > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#work > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#work > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#work > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*====================
+ 	     REFERENCES
+ 	======================*/
+ 	section#references{
+ 		background-color: white;
+ 		min-height: 75vh;
+ 		color: black;
+ 		padding: 15px 15px 15px 15px;
+ 		/*margin-top: 50px;*/
+ 	}	
+
+ 	section#references > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#references > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#references > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#references > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#references > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+	
+	/*====================
+ 	     COMPANY
+ 	======================*/
+ 	section#company{
+ 		background-color: white;
+ 		min-height: 40vh;
+ 		color: black;
+ 		padding: 15px 15px 15px 15px;
+ 		margin-top: 50px;
+ 	}	
+
+ 	section#company > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#company > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#company > div > p {
+ 		text-align: justify;
+ 	}	
+
+ 	section#company > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#company > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*====================
+ 	       ACCOUNT
+ 	======================*/
+ 	section#account{
+ 		background-color: white;
+ 		min-height: 40vh;
+ 		color: black;
+ 		padding: 15px 15px 15px 15px;
+ 		/*margin-top: 50px;*/
+ 	}	
+
+ 	section#account > h2 {
+ 		margin-top: 10px;
+ 	 	padding-top: 15px;
+ 	 	padding-bottom: 15px;
+ 	 } 	
+
+ 	section#account > div {
+ 		border: 2px solid black;
+ 		padding: 15px;
+ 		/*width: 33.33%;*/
+ 		float: left;
+ 		width: 100%;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	section#account > div > p {
+ 		text-align: jaccount
+ 	}	
+
+ 	section#account > div > img {
+ 		width: 10%;
+ 		float: left;
+ 		margin-right: 15px;
+ 	}	
+
+ 	section#account > div > h3 {
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 		text-align: justify;
+ 	}	
+
+ 	/*====================
+ 	        FOOTER
+ 	======================*/
 
 
- .sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 125px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
- }
+ 	footer#mainFooter{
+ 		background-color: black;
+ 		padding: 15px;
+ 		text-align: center;
+ 	}
 
-.HeadSpace{
-  margin-top:67px;
-}
+ 	footer#mainFooter > div#left {
+ 		width: 50%;
+ 		display:inline-block;
+ 		float: left;
+ 		font-size: 12px;
+ 		padding: 22px;
+ 	}
 
-/*Side bar css*/
-.wrapper {
-  padding-left: 0;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
+ 	footer#mainFooter > div#right {
+ 		width: 50%;
+ 		display:inline-block;
+ 		float: left;
+ 		padding: 30px;
+ 	}
 
+ 	footer#mainFooter > div#right > ul {
+ 		list-style-type: none;
+ 		text-align: right;
+ 	}
 
-.sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  left: 125px;
-  width: 125px;
-  height: 100%;
-  margin-left: -125px;
-  overflow-y: auto;
-  background: #CCCCCC;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 125px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
-}
-
-.sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #000;
-}
-
-.sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.sidebar-nav li a:active, .sidebar-nav li a:focus {
-  text-decoration: none;
-}
-
-.sidebar-nav>.sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
-}
-
-/*.sidebar-nav>.sidebar-brand a {
-  color: #999999;
-}*/
-
-.sidebar-nav>.sidebar-brand a:hover {
-  color: black;
-  background: none;
-}
-div.Adjust2Sidebar{
-  margin-left: 125px;
-}
-div.img-about{
-  background-image: url("../img/aboutus-2.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 10%;
-}
-div.img-mission{
-  background-image: url("../img/mission.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 10%;
-}
-div.img-vision{
-  background-image: url("../img/vision-2.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 10%;
-}
+ 	footer#mainFooter > div#right > ul > li {
+ 		display: inline-block;
+ 		padding: 5px;
+ 	}
 
 
- .sidebar-nav li {
-  text-indent: 20px;
-  line-height: 40px;
- }
-
- .sidebar-nav li a {
-  display: block;
-  text-decoration: none;
-  color: #000;
- }
-
- .sidebar-nav li a:hover {
-  text-decoration: none;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.2);
- }
-
- .sidebar-nav li a:active, .sidebar-nav li a:focus {
-  text-decoration: none;
- }
-
- .sidebar-nav>.sidebar-brand {
-  height: 65px;
-  font-size: 18px;
-  line-height: 60px;
- }
-
-/*.sidebar-nav>.sidebar-brand a {
-  color: #999999;
-  }*/
-
-  .sidebar-nav>.sidebar-brand a:hover {
-    color: black;
-    background: none;
-  }
-  div.Adjust2Sidebar{
-    margin-left: 125px;
-  }
-  div.img-about{
-    background-image: url("../img/aboutus-2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 10%;
-  }
-  div.img-mission{
-    background-image: url("../img/mission.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  div.img-vision{
-    background-image: url("../img/vision-2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .ourprocess{
-    background-image: url("../img/Process.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 541px;
-    margin-left: -15%;
-    margin-top: -10%;
-  }
- 
- div.list-group1{
-  margin-top: -10%;
- }
-
- .clear:after {
- 	content: "";
- 	display: block;
- 	clear: both;
- }
-}
-
-
-
-
+ 	.clear:after {
+ 		content: "";
+ 		display: block;
+ 		clear: both;
+ 	}
+ 	}
